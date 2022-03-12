@@ -26,5 +26,5 @@ jobs:
         with:
           add: "."
           author_name: "GitHub Actions"
-          message: "Update stats on $(date '+%Y-%m-%d %H:%M:%S')"
+          message: "Scrape and update stats"
           push: true
