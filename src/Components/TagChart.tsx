@@ -33,7 +33,7 @@ export function TagChart({ tag }: Props) {
       {
         label: `Views`,
         data,
-        fill: false,
+        fill: true,
         borderColor: "#E45780",
         backgroundColor: "#E45780",
       },
@@ -81,7 +81,7 @@ export function TagChart({ tag }: Props) {
     <div className="TagChart__outer">
       <h2 className="TagChart__title">
         Views for{" "}
-        <a key={tag} href={`https://tiktok.com/tag/${tag}`}>
+        <a key={tag} target="_blank" href={`https://tiktok.com/tag/${tag}`}>
           {`#${tag}`}
         </a>
       </h2>
