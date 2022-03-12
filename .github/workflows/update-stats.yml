@@ -1,0 +1,30 @@
+name: Update stats
+
+on: workflow_dispatch
+
+jobs:
+  update-stats:
+    name: Update stats
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Scrape new data values
+        run: ./cli.py scrape
+
+      - uses: EndBug/add-and-commit@v9 # You can change this to use a specific version.
+        with:
+          add: "."
+          author_name: "GitHub Actions"
+          message: "Update stats on $(date '+%Y-%m-%d %H:%M:%S')"
+          push: true

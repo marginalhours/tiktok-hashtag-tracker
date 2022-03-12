@@ -40,6 +40,14 @@ def add_tag_record(tag: str, timestamp: str, view_count: int):
         tag_record_file.write(f"{timestamp}\t{view_count}\n")
 
 
+def delete_tag_record_file(tag: str):
+    (DATA_DIR / f"{tag}.txt").unlink(missing_ok=True)
+
+
+def add_tag_record_file(tag: str):
+    (DATA_DIR / f"{tag}.txt").touch(exist_ok=True)
+
+
 def views_as_number(views: str):
     """
     Convert TikTok view text to an integer
@@ -111,6 +119,7 @@ def add_tag(tag_name: str):
     existing_tags.add(tag_name)
 
     write_out_tags(existing_tags)
+    add_tag_record_file(tag_name)
 
 
 def remove_tag(tag_name: str):
@@ -119,6 +128,7 @@ def remove_tag(tag_name: str):
     existing_tags -= {tag_name}
 
     write_out_tags(existing_tags)
+    delete_tag_record_file(tag_name)
 
 
 if __name__ == "__main__":
