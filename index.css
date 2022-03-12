@@ -55,3 +55,13 @@ body {
   height: 320px;
   margin-bottom: 2em;
 }
+
+.TagChart__noData {
+  height: 320px;
+  width: 100%;
+  background-color: #f7f7f7;
+  color: #aaa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

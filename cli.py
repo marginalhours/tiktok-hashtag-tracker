@@ -121,6 +121,8 @@ def add_tag(tag_name: str):
     write_out_tags(existing_tags)
     add_tag_record_file(tag_name)
 
+    print(f"Added tag {tag_name}")
+
 
 def remove_tag(tag_name: str):
     existing_tags = get_existing_tags()
@@ -129,6 +131,8 @@ def remove_tag(tag_name: str):
 
     write_out_tags(existing_tags)
     delete_tag_record_file(tag_name)
+
+    print(f"Removed tag {tag_name}")
 
 
 if __name__ == "__main__":

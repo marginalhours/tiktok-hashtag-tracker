@@ -86,8 +86,10 @@ export function TagChart({ tag }: Props) {
         </a>
       </h2>
       <div className="TagChart__canvasWrapper">
-        {labels && labels.length && (
+        {labels && labels.length ? (
           <Line data={lineData} options={options} height={320} />
+        ) : (
+          <div className="TagChart__noData">No data (yet)</div>
         )}
       </div>
       <hr className="TagChart__ruler" />
