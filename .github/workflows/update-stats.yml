@@ -1,6 +1,10 @@
 name: Update stats
 
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+  schedule:
+    # Runs every 6 hours (see https://crontab.guru)
+    - cron: "* 0,6,12,18 * * *"
 
 jobs:
   update-stats:
