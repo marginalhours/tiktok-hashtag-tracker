@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       tagName:
-        description: "Hashtag to track"
+        description: "Hashtag to remove"
         required: true
 
 jobs:
