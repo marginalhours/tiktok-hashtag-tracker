@@ -1,5 +1,7 @@
 import React, { useMemo } from "react";
 
+import moment from "moment";
+
 import {
   TimeScale,
   LinearScale,
@@ -19,13 +21,31 @@ import { useTag } from "../hooks";
 
 interface Props {
   tag: string;
+  startDate?: Date;
+  endDate?: Date;
 }
 
-export function TagChart({ tag }: Props) {
+export function TagChart({ tag, startDate, endDate }: Props) {
   const { tagData, loading } = useTag(tag);
 
-  const labels = tagData?.map((point) => point.date) || [];
-  const data = tagData?.map((point) => point.viewCount) || [];
+  const filteredData = useMemo(() => {
+    let data = tagData || [];
+
+    if (startDate !== null) {
+      const start = moment(startDate).utcOffset(0).startOf("day");
+      data = data.filter((d) => moment(d.date).utcOffset(0).isAfter(start));
+    }
+
+    if (endDate !== null) {
+      const end = moment(endDate).utcOffset(0).endOf("day");
+      data = data.filter((d) => moment(d.date).utcOffset(0).isBefore(end));
+    }
+
+    return data;
+  }, [tagData, startDate, endDate]);
+
+  const labels = filteredData.map((point) => point.date);
+  const data = filteredData.map((point) => point.viewCount);
 
   const lineData = {
     labels: labels.map((l) => l.toISOString()),
@@ -41,21 +61,26 @@ export function TagChart({ tag }: Props) {
   };
 
   const minDate = useMemo(() => {
-    const firstDate = labels?.[0] ? new Date(labels?.[0]) : new Date();
-    firstDate.setDate(firstDate.getDate() - 1);
+    if (startDate !== null) {
+      return moment(startDate).utcOffset(0).startOf("day");
+    }
 
-    return firstDate;
+    const firstDate = labels?.[0] ? new Date(labels?.[0]) : new Date();
+    return moment(firstDate).startOf("day");
   }, [labels]);
 
   const maxDate = useMemo(() => {
+    if (endDate !== null) {
+      return moment(endDate).utcOffset(0).endOf("day");
+    }
+
     const lastIndex = (labels?.length || 0) - 1;
     const lastDate = labels?.[lastIndex]
       ? new Date(labels?.[lastIndex])
       : new Date();
-    lastDate.setDate(lastDate.getDate() + 1);
 
-    return lastDate;
-  }, [labels]);
+    return moment(lastDate).endOf("day");
+  }, [labels, endDate]);
 
   const options: ChartOptions = {
     scales: {
@@ -64,8 +89,8 @@ export function TagChart({ tag }: Props) {
         time: {
           unit: "day",
         },
-        min: minDate.toDateString(),
-        max: maxDate.toDateString(),
+        min: minDate,
+        max: maxDate,
         display: true,
         text: "Date",
       },
@@ -86,11 +111,7 @@ export function TagChart({ tag }: Props) {
         </a>
       </h2>
       <div className="TagChart__canvasWrapper">
-        {labels && labels.length ? (
-          <Line data={lineData} options={options} height={320} />
-        ) : (
-          <div className="TagChart__noData">No data (yet)</div>
-        )}
+        <Line data={lineData} options={options} height={320} />
       </div>
       <hr className="TagChart__ruler" />
     </div>
