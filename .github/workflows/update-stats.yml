@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   schedule:
     # Runs every 3 hours (see https://crontab.guru)
-    - cron: "* */3 * * *"
+    - cron: "0 */3 * * *"
 
 jobs:
   update-stats:
