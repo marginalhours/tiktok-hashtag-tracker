@@ -15,6 +15,11 @@ export interface DataPoint {
 
 export const getTagData = async (tag: string): Promise<DataPoint[]> => {
   const response = await fetch(`./data/${tag}.txt`);
+
+  if (response.status === 404) {
+    return [];
+  }
+
   const body = await response.text();
   const records = body.split("\n").filter((x) => x.length > 0);
 

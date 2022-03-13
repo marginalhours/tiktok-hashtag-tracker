@@ -26,7 +26,7 @@ interface Props {
 }
 
 export function TagChart({ tag, startDate, endDate }: Props) {
-  const { tagData, loading } = useTag(tag);
+  const { tagData, loading, error } = useTag(tag);
 
   const filteredData = useMemo(() => {
     let data = tagData || [];
@@ -102,6 +102,8 @@ export function TagChart({ tag, startDate, endDate }: Props) {
     showToolTips: true,
   };
 
+  const showChart = !error && !loading && labels && labels.length;
+
   return (
     <div className="TagChart__outer">
       <h2 className="TagChart__title">
@@ -111,7 +113,11 @@ export function TagChart({ tag, startDate, endDate }: Props) {
         </a>
       </h2>
       <div className="TagChart__canvasWrapper">
-        <Line data={lineData} options={options} height={320} />
+        {showChart ? (
+          <Line data={lineData} options={options} height={320} />
+        ) : (
+          <div className="TagChart__noData">No data (yet)</div>
+        )}
       </div>
       <hr className="TagChart__ruler" />
     </div>
