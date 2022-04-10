@@ -10,6 +10,7 @@ Commands:
 
 """
 import sys
+import time
 import httpx
 from pathlib import Path
 from datetime import datetime
@@ -103,6 +104,7 @@ def scrape_tags():
 
     for tag in tags_to_scrape:
         scrape_tag(tag)
+        time.sleep(0.2) # stay below 5 reqs/s
 
 
 def add_tag(tag_name: str):
