@@ -2,7 +2,7 @@
 
 A Rube Goldberg github actions-based TikTok hashtag tracker
 
-[View live here](https://misterkeefe.github.io/tiktok-hashtag-tracker/)
+[View live here](https://marginalhours.github.io/tiktok-hashtag-tracker/)
 
 ## Usage
 
