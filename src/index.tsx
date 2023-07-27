@@ -5,6 +5,6 @@ import "./styles/mvp.css";
 import "./styles/app.css";
 import "react-datepicker/dist/react-datepicker.css";
 
-import { TagList } from "./Components/TagList";
+import { TagTabs } from "./Components/TagTabs";
 
-ReactDOM.render(<TagList />, document.getElementById("root"));
+ReactDOM.render(<TagTabs />, document.getElementById("root"));

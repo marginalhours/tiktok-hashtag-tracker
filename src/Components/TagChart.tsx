@@ -26,7 +26,7 @@ interface Props {
 }
 
 export function TagChart({ tag, startDate, endDate }: Props) {
-  const { tagData, loading, error } = useTag(tag);
+  const { tagData, tagTabs, loading, error } = useTag(tag);
 
   const filteredData = useMemo(() => {
     let data = tagData || [];
@@ -108,9 +108,17 @@ export function TagChart({ tag, startDate, endDate }: Props) {
     <div className="TagChart__outer">
       <h2 className="TagChart__title">
         Views for{" "}
-        <a key={tag} target="_blank" href={`https://tiktok.com/tag/${tag}`}>
-          {`#${tag}`}
+        <a
+          key={tag}
+          className="TagChart__link"
+          target="_blank"
+          href={`https://tiktok.com/tag/${tag}`}
+        >
+          {`${tag}`}
         </a>
+        {tagTabs?.map((tab) => (
+          <span className="TagChart__TabName">{tab}</span>
+        ))}
       </h2>
       <div className="TagChart__canvasWrapper">
         {showChart ? (

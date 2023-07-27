@@ -1,38 +1,51 @@
-import React, { useState } from "react";
+import React, { ChangeEvent, useEffect, useMemo, useState } from "react";
 import DatePicker from "react-datepicker";
-import { registerLocale, setDefaultLocale } from "react-datepicker";
-import enGB from "date-fns/locale/en-GB";
-registerLocale("en-GB", enGB);
 
-import { useTags } from "../hooks";
+import { useDebouncedCallback } from "../hooks";
 import { TagChart } from "./TagChart";
+import { FixedSizeList } from "react-window";
 
-export function TagList() {
-  const { tags, loading } = useTags();
-  const [tagFilter, setTagFilter] = useState("");
+const TagFilter = ({ setValue }) => {
+  const [filter, setFilter] = useState("");
+
+  const onFilter = useDebouncedCallback(() => {
+    setValue(filter);
+  }, 300);
+
+  const handleFilterChange = (event: ChangeEvent<HTMLInputElement>) => {
+    setFilter(event.target.value);
+  };
+
+  useEffect(() => {
+    onFilter();
+  }, [filter, onFilter]);
+
+  return (
+    <input
+      className="TagList__tagFilterInput"
+      type="text"
+      value={filter}
+      onChange={handleFilterChange}
+      placeholder="Filter charts by name..."
+    ></input>
+  );
+};
+
+export function TagList({ tags }) {
   const [dateRange, setDateRange] = useState<Date[]>([null, null]);
+  const [tagFilter, setTagFilter] = useState("");
 
-  if (loading) {
-    return <h1>Loading...</h1>;
-  }
+  const filteredTags = useMemo(
+    () => (tags || []).filter((tag) => tag.includes(tagFilter)),
+    [tags, tagFilter]
+  );
 
   const [startDate, endDate] = dateRange;
 
-  const filteredTags = tags.filter((tag) => tag.includes(tagFilter));
-
   return (
-    <div className="TagList__outer">
-      <div className="TagList__title">
-        <h1>TikTok Tag Analytics</h1>
-      </div>
+    <>
       <div className="TagList__tagFilter">
-        <input
-          className="TagList__tagFilterInput"
-          type="text"
-          value={tagFilter}
-          onChange={(e) => setTagFilter(e.target.value)}
-          placeholder="Filter charts by name..."
-        ></input>
+        <TagFilter setValue={setTagFilter} />
         <div className="TagList__tagDateFilter">
           <DatePicker
             selectsRange={true}
@@ -49,15 +62,30 @@ export function TagList() {
         </div>
       </div>
       <div className="TagList__tagCharts">
-        {filteredTags.map((tag, index) => (
+        <FixedSizeList
+          itemData={filteredTags}
+          itemCount={filteredTags.length}
+          height={800}
+          width={"100%"}
+          itemSize={400}
+        >
+          {({ data, index }) => (
+            <TagChart
+              tag={data[index]}
+              startDate={startDate}
+              endDate={endDate}
+            />
+          )}
+        </FixedSizeList>
+        {/* {filteredTags.map((tag, index) => (
           <TagChart
             key={tag}
             tag={tag}
             startDate={startDate}
             endDate={endDate}
           />
-        ))}
+        ))} */}
       </div>
-    </div>
+    </>
   );
 }

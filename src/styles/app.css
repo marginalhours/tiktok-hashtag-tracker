@@ -52,9 +52,9 @@ body {
   margin-left: 1em;
 }
 
-.TagList__tagCharts {
+/* .TagList__tagCharts {
   overflow-y: scroll;
-}
+} */
 
 .TagChart__outer {
   width: 100%;
@@ -70,6 +70,25 @@ body {
 .TagChart__title {
   margin-bottom: "1em";
   font-family: sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+.TagChart__TabName {
+  margin-left: 0.5rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.75rem;
+  color: #c05621;
+  border-radius: 5rem;
+  background-color: #feebc8;
+}
+
+.TagChart__link {
+  display: inline-block;
+  margin-left: 0.5rem;
 }
 
 .TagChart__canvasWrapper {
@@ -86,3 +105,26 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.TabNames__outer {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.TabName__inner {
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.TabName__inner.TabName__active {
+  color: rgb(28 100 242);
+  cursor: default;
+  background-color: rgb(243 244 246);
+}
+

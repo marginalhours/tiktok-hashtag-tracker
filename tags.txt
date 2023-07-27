@@ -1,8 +1,8 @@
-juliafine
-maddalenaandthedark
-erinacraig
-alandsowide
-houseofsaltandsorrows
+juliafine -- #soph-titles
+maddalenaandthedark -- #headline-eternal-titles
+erinacraig -- #target-list #competitors
+alandsowide -- #competitors
+houseofsaltandsorrows -- #requests
 houseofrootsandruin
 eternalbookstorm
 ambernicole
