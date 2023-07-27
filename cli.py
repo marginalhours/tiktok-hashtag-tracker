@@ -26,7 +26,7 @@ DATA_DIR = Path(__file__).parent / "data"
 
 def get_existing_tags() -> Set[str]:
     with TAG_FILE.open() as tag_file:
-        return {t.strip() for t in tag_file.readlines()}
+        return {t.split("--")[0].strip() for t in tag_file.readlines()}
 
 
 def write_out_tags(tags: Set[str]):
