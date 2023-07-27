@@ -1,5 +1,4 @@
 body {
-  height: 100vh;
 }
 
 .TagList__outer {
@@ -7,8 +6,6 @@ body {
   flex-direction: column;
   width: 80vw;
   margin: 0 auto;
-  height: 100vh;
-  overflow: hidden;
 }
 
 .TagList__title {
@@ -17,7 +14,7 @@ body {
 }
 
 .TagList__tagFilter {
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -28,7 +25,7 @@ body {
 .TagList__tagFilterInput {
   width: 100%;
   display: block;
-  padding: 1em 2em;
+  padding: 0.5em 0.75em;
 }
 
 .TagList__tagDateFilter {
@@ -37,7 +34,7 @@ body {
 
 .react-datepicker__close-icon {
   height: auto !important;
-  padding: 1em 2em;
+  padding: 0.5em 0.75em;
   margin-top: 1em;
 }
 
@@ -48,7 +45,7 @@ body {
 }
 
 .react-datepicker__input-container input {
-  padding: 1em 2em;
+  padding: 0.5em 0.75em;
   margin-left: 1em;
 }
 
@@ -75,20 +72,20 @@ body {
 }
 
 .TagChart__TabName {
-  margin-left: 0.5rem;
+  margin-left: 0.5em;
   font-weight: 700;
   display: inline-flex;
   align-items: center;
   font-size: 0.75rem;
-  padding: 0.25rem 0.75rem;
+  padding: 0.25em 0.75em;
   color: #c05621;
-  border-radius: 5rem;
+  border-radius: 5em;
   background-color: #feebc8;
 }
 
 .TagChart__link {
   display: inline-block;
-  margin-left: 0.5rem;
+  margin-left: 0.5em;
 }
 
 .TagChart__canvasWrapper {
@@ -111,15 +108,14 @@ body {
   flex-direction: row;
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1em;
 }
 
 .TabName__inner {
   cursor: pointer;
-  padding: 1rem;
+  padding: 0.5em 0.75em;
 }
 
 .TabName__inner.TabName__active {

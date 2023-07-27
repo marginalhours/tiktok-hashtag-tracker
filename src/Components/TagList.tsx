@@ -69,12 +69,14 @@ export function TagList({ tags }) {
           width={"100%"}
           itemSize={400}
         >
-          {({ data, index }) => (
-            <TagChart
-              tag={data[index]}
-              startDate={startDate}
-              endDate={endDate}
-            />
+          {({ data, index, style }) => (
+            <div style={style}>
+              <TagChart
+                tag={data[index]}
+                startDate={startDate}
+                endDate={endDate}
+              />
+            </div>
           )}
         </FixedSizeList>
         {/* {filteredTags.map((tag, index) => (
