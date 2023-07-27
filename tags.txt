@@ -1,66 +1,66 @@
 juliafine -- #soph-titles
-maddalenaandthedark -- #headline-eternal-titles
-erinacraig -- #target-list #competitors
-alandsowide -- #competitors
-houseofsaltandsorrows -- #requests
-houseofrootsandruin
-eternalbookstorm
-ambernicole
-godsandmonsters
-thebookofazrael
-thethroneofbrokengods
-cncrawford
-frostandnectar
-ingridseymour
-healerofkingdoms
-aprincesocruel
-acagesogilded
-acourtsodark
-briarboleyn
-queenofroses
-alexamartin
-betterthanfiction
-nextdoornemesis
-dianemariebrown
-blackcandlewomen
-jccervantes
-theenchantedhacienda
-evelynskye
-thehundredlovesofjuliet
-gracereilly
-firstdown
-thecoven
-harperlwoods
-kateweston
-murderonaschoolnight
-mazeyeddings
-abrushwithlove
-lizzieblakesbestmistake
-theplusone
-jillshalvis
-headlineeternal
-rachelhawkins
-erinsterling
-theexhex
-thekisscurse
-sarahadams
-thecheatsheet
-wheninrome
-practicemakesperfect
-therulebook
-fromlukovwithlove
-whengraciemetthegrump
-thewallofwinnipegandme
-marianazapata
-monicamurphy
-finlaydonovan
-ellecosimano
-thelisteners
-maggiestiefvater
-rebeccayarros
-fourthwing
-ironflame
-carissabroadbent
-theserpentandthewingsofnight
-theashesandthestarcursedking
-thedeadromantics
+maddalenaandthedark -- #soph-titles
+erinacraig -- #soph-titles
+alandsowide -- #soph-titles
+houseofsaltandsorrows -- #soph-titles
+houseofrootsandruin -- #soph-titles
+dianemariebrown -- #soph-titles
+blackcandlewomen -- #soph-titles
+evelynskye -- #soph-titles
+thehundredlovesofjuliet -- #soph-titles
+jccervantes -- #soph-titles
+theenchantedhacienda -- #soph-titles
+alexamartin -- #soph-titles
+betterthanfiction -- #soph-titles
+nextdoornemesis -- #soph-titles
+ambernicole -- #target-list
+godsandmonsters -- #target-list
+thebookofazrael -- #target-list
+thethroneofbrokengods -- #target-list
+cncrawford -- #target-list
+frostandnectar -- #target-list
+ingridseymour -- #target-list
+healerofkingdoms -- #target-list
+aprincesocruel -- #target-list
+acagesogilded -- #target-list
+acourtsodark -- #target-list
+briarboleyn -- #target-list
+queenofroses -- #target-list
+eternalbookstorm -- #headline-eternal-titles
+mazeyeddings -- #headline-eternal-titles
+abrushwithlove -- #headline-eternal-titles
+lizzieblakesbestmistake -- #headline-eternal-titles
+theplusone -- #headline-eternal-titles
+jillshalvis -- #headline-eternal-titles
+headlineeternal -- #headline-eternal-titles
+erinsterling -- #headline-eternal-titles
+theexhex -- #headline-eternal-titles
+thekisscurse -- #headline-eternal-titles
+sarahadams -- #headline-eternal-titles
+thecheatsheet -- #headline-eternal-titles
+wheninrome -- #headline-eternal-titles
+practicemakesperfect -- #headline-eternal-titles
+therulebook -- #headline-eternal-titles
+fromlukovwithlove -- #headline-eternal-titles
+whengraciemetthegrump -- #headline-eternal-titles
+thewallofwinnipegandme -- #headline-eternal-titles
+marianazapata -- #headline-eternal-titles
+monicamurphy -- #headline-eternal-titles
+rebeccayarros -- #competitors
+fourthwing -- #competitors
+ironflame -- #competitors
+carissabroadbent -- #competitors
+theserpentandthewingsofnight -- #competitors
+theashesandthestarcursedking -- #competitors
+thedeadromantics -- #competitors
+gracereilly -- #requests
+firstdown -- #requests
+thecoven -- #requests
+rachelhawkins -- #requests
+harperlwoods -- #requests
+kateweston -- #requests
+murderonaschoolnight -- #requests
+finlaydonovan -- #requests
+ellecosimano -- #requests
+maggiestiefvater -- #requests
+thelisteners -- #requests
