@@ -26,6 +26,9 @@ acagesogilded -- #target-list
 acourtsodark -- #target-list
 briarboleyn -- #target-list
 queenofroses -- #target-list
+lylasage -- #targetlist
+doneanddusted -- #targetlist
+cowboyromance -- #targetlist
 eternalbookstorm -- #headline-eternal-titles
 mazeyeddings -- #headline-eternal-titles
 abrushwithlove -- #headline-eternal-titles
