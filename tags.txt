@@ -1,5 +1,9 @@
 juliafine -- #soph-titles
 maddalenaandthedark -- #soph-titles
+ambernicole -- #soph-titles
+godsandmonsters -- #soph-titles
+thebookofazrael -- #soph-titles
+thethroneofbrokengods -- #soph-titles
 erinacraig -- #soph-titles
 alandsowide -- #soph-titles
 houseofsaltandsorrows -- #soph-titles
@@ -13,10 +17,6 @@ theenchantedhacienda -- #soph-titles
 alexamartin -- #soph-titles
 betterthanfiction -- #soph-titles
 nextdoornemesis -- #soph-titles
-ambernicole -- #target-list
-godsandmonsters -- #target-list
-thebookofazrael -- #target-list
-thethroneofbrokengods -- #target-list
 cncrawford -- #target-list
 frostandnectar -- #target-list
 ingridseymour -- #target-list
