@@ -18,8 +18,6 @@ theenchantedhacienda -- #soph-titles
 alexamartin -- #soph-titles
 betterthanfiction -- #soph-titles
 nextdoornemesis -- #soph-titles
-lylasage -- #target-list
-doneanddusted -- #target-list
 cncrawford -- #target-list
 frostandnectar -- #target-list
 ingridseymour -- #target-list
@@ -60,6 +58,9 @@ carissabroadbent -- #competitors
 theserpentandthewingsofnight -- #competitors
 theashesandthestarcursedking -- #competitors
 thedeadromantics -- #competitors
+lylasage -- #competitors
+doneanddusted -- #competitors
+swiftandsaddled -- #competitors
 gracereilly -- #requests
 firstdown -- #requests
 thecoven -- #requests
