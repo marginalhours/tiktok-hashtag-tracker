@@ -33,6 +33,8 @@ lylasage -- #target-list
 doneanddusted -- #target-list
 cowboyromance -- #target-list
 sararaasch -- #target-list
+emilymcintire -- #target-list
+crossed -- #target-list
 eternalbookstorm -- #headline-eternal-titles
 mazeyeddings -- #headline-eternal-titles
 abrushwithlove -- #headline-eternal-titles
