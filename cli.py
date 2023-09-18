@@ -105,7 +105,7 @@ def scrape_tags():
     """
     tags_to_scrape = get_existing_tags()
 
-    with client as httpx.Client():
+    with httpx.Client() as client:
         for tag in tags_to_scrape:
             scrape_tag(tag, client)
             time.sleep(REQUEST_WAIT_TIME)
