@@ -24,7 +24,7 @@ TAG_FILE = Path(__file__).parent / "tags.txt"
 DATA_DIR = Path(__file__).parent / "data"
 
 # Tweak to tradeoff how hard we hit the API vs. how long the action takes to run
-REQUEST_WAIT_TIME = 0.25  
+REQUEST_WAIT_TIME = 0.5  
 
 
 def get_existing_tags() -> Set[str]:
@@ -77,7 +77,7 @@ def scrape_tag(tag: str, client: httpx.Client):
 
     print(f"Fetching {tag_url} ...")
 
-    response = client.get(tag_url, follow_redirects=True, timeout=10.0)
+    response = client.get(tag_url, follow_redirects=True, timeout=30.0)
 
     if response.status_code != 200:
         print(f"Unable to fetch page for tag {tag}: {response.status_code}")
