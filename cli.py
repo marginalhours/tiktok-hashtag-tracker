@@ -23,6 +23,9 @@ BASE_URL = "https://tiktok.com/tag"
 TAG_FILE = Path(__file__).parent / "tags.txt"
 DATA_DIR = Path(__file__).parent / "data"
 
+# Tweak to tradeoff how hard we hit the API vs. how long the action takes to run
+REQUEST_WAIT_TIME = 0.33  
+
 
 def get_existing_tags() -> Set[str]:
     with TAG_FILE.open() as tag_file:
@@ -104,7 +107,7 @@ def scrape_tags():
 
     for tag in tags_to_scrape:
         scrape_tag(tag)
-        time.sleep(0.2) # stay below 5 reqs/s
+        time.sleep(REQUEST_WAIT_TIME)
 
 
 def add_tag(tag_name: str):
