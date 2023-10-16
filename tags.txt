@@ -18,16 +18,15 @@ theenchantedhacienda -- #soph-titles
 alexamartin -- #soph-titles
 betterthanfiction -- #soph-titles
 nextdoornemesis -- #soph-titles
-hannahbonamyoung -- #target-list
-outonalimb -- #target-list
+ingridseymour -- #soph-titles
+healerofkingdoms -- #soph-titles
+aprincesocruel -- #soph-titles
+acagesogilded -- #soph-titles
+acourtsodark -- #soph-titles
+balkhabra -- #target-list
+#collidebalkhabra -- #target-list
 cncrawford -- #target-list
-frostandnectar -- #target-list
-ingridseymour -- #target-list
-healerofkingdoms -- #target-list
-aprincesocruel -- #target-list
-acagesogilded -- #target-list
-acourtsodark -- #target-list
-acourtthiscruelandlovely -- #target-list
+frostandnectar -- #target-listacourtthiscruelandlovely -- #target-list
 staciastark -- #target-list
 briarboleyn -- #target-list
 queenofroses -- #target-list
@@ -67,6 +66,8 @@ thedeadromantics -- #competitors
 lylasage -- #competitors
 doneanddusted -- #competitors
 swiftandsaddled -- #competitors
+hannahbonamyoung -- #competitors
+outonalimb -- #competitors
 gracereilly -- #requests
 firstdown -- #requests
 thecoven -- #requests
