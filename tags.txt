@@ -26,7 +26,8 @@ acourtsodark -- #soph-titles
 balkhabra -- #target-list
 #collidebalkhabra -- #target-list
 cncrawford -- #target-list
-frostandnectar -- #target-listacourtthiscruelandlovely -- #target-list
+frostandnectar -- #target-list
+acourtthiscruelandlovely -- #target-list
 staciastark -- #target-list
 briarboleyn -- #target-list
 queenofroses -- #target-list
