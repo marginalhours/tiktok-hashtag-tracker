@@ -24,7 +24,10 @@ aprincesocruel -- #soph-titles
 acagesogilded -- #soph-titles
 acourtsodark -- #soph-titles
 balkhabra -- #target-list
-#collidebalkhabra -- #target-list
+collidebalkhabra -- #target-list
+ljandrews -- #target-list
+acurseofshadowsandthorns -- #target-list
+theeverking -- #target-list
 cncrawford -- #target-list
 frostandnectar -- #target-list
 acourtthiscruelandlovely -- #target-list
