@@ -5,6 +5,9 @@ godsandmonsters -- #soph-titles
 thebookofazrael -- #soph-titles
 thethroneofbrokengods -- #soph-titles
 samkielanddianna -- #soph-titles
+gracereilly -- #soph-titles
+firstdown -- #soph-titles
+wickeddown -- #soph-titles
 erinacraig -- #soph-titles
 alandsowide -- #soph-titles
 houseofsaltandsorrows -- #soph-titles
@@ -72,9 +75,7 @@ doneanddusted -- #competitors
 swiftandsaddled -- #competitors
 hannahbonamyoung -- #competitors
 outonalimb -- #competitors
-gracereilly -- #requests
-firstdown -- #requests
-thecoven -- #requests
+cheonseonran -- #requests
 rachelhawkins -- #requests
 jessiegaynor -- #requests
 harperlwoods -- #requests
