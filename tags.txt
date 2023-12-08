@@ -1,5 +1,3 @@
-juliafine -- #soph-titles
-maddalenaandthedark -- #soph-titles
 ambernicole -- #soph-titles
 godsandmonsters -- #soph-titles
 thebookofazrael -- #soph-titles
@@ -12,6 +10,8 @@ erinacraig -- #soph-titles
 alandsowide -- #soph-titles
 houseofsaltandsorrows -- #soph-titles
 houseofrootsandruin -- #soph-titles
+juliafine -- #soph-titles
+maddalenaandthedark -- #soph-titles
 dianemariebrown -- #soph-titles
 blackcandlewomen -- #soph-titles
 evelynskye -- #soph-titles
@@ -75,6 +75,11 @@ doneanddusted -- #competitors
 swiftandsaddled -- #competitors
 hannahbonamyoung -- #competitors
 outonalimb -- #competitors
+norasakavic -- #requests
+allforthegame -- #requests
+thefoxholecourt -- #requests
+theravenking -- #requests
+thekingsmen -- #requests
 cheonseonran -- #requests
 rachelhawkins -- #requests
 jessiegaynor -- #requests
