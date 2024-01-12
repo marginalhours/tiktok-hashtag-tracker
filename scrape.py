@@ -6,17 +6,15 @@ Only scrapes, doesn't add/remove
 """
 from pathlib import Path
 from typing import Set
-from TikTokApi import TikTokApi
-import asyncio
-import os
+from tiktokapipy.api import TikTokAPI
+import random
+import time
 from datetime import datetime
+import tqdm
 
 TAG_FILE = Path(__file__).parent / "tags.txt"
 DATA_DIR = Path(__file__).parent / "data"
-
-ms_token = os.environ.get("MS_TOKEN", None)
-
-print(ms_token)
+REQUEST_WAIT_TIME = 0.5
 
 
 def add_tag_record(tag: str, timestamp: str, view_count: int):
@@ -29,20 +27,23 @@ def get_existing_tags() -> Set[str]:
         return {t.split("--")[0].strip() for t in tag_file.readlines()}
 
 
-async def lookup_tags():
-    async with TikTokApi() as api:
-        await api.create_sessions(
-            ms_tokens=[ms_token], num_sessions=1, sleep_after=3, headless=True
-        )
+def lookup_tags():
+    tag_list = list(get_existing_tags())
+    # shuffle in case later failures are more likely (cheers TikTok)
+    random.shuffle(tag_list)
 
-        for tag in list(get_existing_tags())[0:2]:
-            tag = api.hashtag(tag)
-            info = await tag.info()
-            views = info["challengeInfo"]["stats"]["viewCount"]
-            timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    with TikTokAPI() as api:
+        for tag in tqdm.tqdm(tag_list):
+            try:
+                tag_entry = api.challenge(tag)
+                views = tag_entry.stats.view_count
+                timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-            add_tag_record(tag.name, timestamp, int(views))
+                add_tag_record(tag, timestamp, int(views))
+                time.sleep(REQUEST_WAIT_TIME)
+            except Exception as err:
+                print(f"Couldn't scrape tag: {tag} - {err}")
 
 
 if __name__ == "__main__":
-    asyncio.run(lookup_tags())
+    lookup_tags()

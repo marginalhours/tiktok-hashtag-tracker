@@ -51,8 +51,6 @@ jobs:
 
       - name: Scrape new data values
         run: ./scrape.py
-        env:
-          MS_TOKEN: ${{ secrets.MS_TOKEN }}
 
       - uses: EndBug/add-and-commit@v9 # You can change this to use a specific version.
         with:
