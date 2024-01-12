@@ -33,7 +33,9 @@ def lookup_tags():
     random.shuffle(tag_list)
 
     with TikTokAPI() as api:
-        for tag in tqdm.tqdm(tag_list):
+        progress = tqdm.tqdm(tag_list)
+        for tag in progress:
+            progress.set_description(tag)
             try:
                 tag_entry = api.challenge(tag)
                 views = tag_entry.stats.view_count
