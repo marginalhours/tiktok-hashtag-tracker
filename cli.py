@@ -24,7 +24,7 @@ TAG_FILE = Path(__file__).parent / "tags.txt"
 DATA_DIR = Path(__file__).parent / "data"
 
 # Tweak to tradeoff how hard we hit the API vs. how long the action takes to run
-REQUEST_WAIT_TIME = 0.5  
+REQUEST_WAIT_TIME = 0.5
 
 
 def get_existing_tags() -> Set[str]:
@@ -39,7 +39,6 @@ def write_out_tags(tags: Set[str]):
 
 
 def add_tag_record(tag: str, timestamp: str, view_count: int):
-
     with (DATA_DIR / f"{tag}.txt").open("a+") as tag_record_file:
         tag_record_file.write(f"{timestamp}\t{view_count}\n")
 
@@ -77,7 +76,11 @@ def scrape_tag(tag: str, client: httpx.Client):
 
     print(f"Fetching {tag_url} ...")
 
-    response = client.get(tag_url, follow_redirects=True, timeout=30.0)
+    headers = {
+        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    }
+
+    response = client.get(tag_url, follow_redirects=True, headers=headers, timeout=30.0)
 
     if response.status_code != 200:
         print(f"Unable to fetch page for tag {tag}: {response.status_code}")
@@ -85,10 +88,10 @@ def scrape_tag(tag: str, client: httpx.Client):
 
     soup = BeautifulSoup(response.text, "html.parser")
     count_element = soup.find("h2", attrs={"data-e2e": "challenge-vvcount"})
-
+    
     if count_element is None:
         print(f"Unable to find count element on page")
-        return
+        sys.exit(1)
 
     view_count = views_as_number(count_element.text)
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")

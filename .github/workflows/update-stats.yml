@@ -10,6 +10,7 @@ jobs:
   update-stats:
     name: Update stats
     runs-on: ubuntu-latest
+    environment: stats
 
     steps:
       - name: Checkout repo
@@ -20,11 +21,38 @@ jobs:
         with:
           python-version: 3.9
 
+      - uses: actions/cache@v3
+        name: Configure pip caching
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Get installed Playwright version
+        id: playwright-version
+        run: echo "PLAYWRIGHT_VERSION=1.40.0" >> $GITHUB_ENV
+
+      - name: Cache playwright binaries
+        uses: actions/cache@v3
+        id: playwright-cache
+        with:
+          path: |
+            ~/.cache/ms-playwright
+          key: ${{ runner.os }}-playwright-${{ env.PLAYWRIGHT_VERSION }}
+
+      - run: pip install playwright==${{ env.PLAYWRIGHT_VERSION }}
+        if: steps.playwright-cache.outputs.cache-hit != 'true'
+
+      - run: python -m playwright install
+
       - name: Scrape new data values
-        run: ./cli.py scrape
+        run: ./scrape.py
+        env:
+          MS_TOKEN: ${{ secrets.MS_TOKEN }}
 
       - uses: EndBug/add-and-commit@v9 # You can change this to use a specific version.
         with:
