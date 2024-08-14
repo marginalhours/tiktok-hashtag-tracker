@@ -41,6 +41,8 @@ glowoftheeverflame -- #target-list
 heatoftheeverflame -- #target-list
 kindredscurse -- #target-list
 kindredscursesaga -- #target-list
+jasminemas -- #target-list
+bloodofhercules -- #target-list
 rlcaulder -- #target-list
 wellsranch -- #target-list
 aliveandwells -- #target-list
