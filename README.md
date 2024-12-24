@@ -1,13 +1,22 @@
 # tiktok-hashtag-tracker
 
-A Rube Goldberg github actions-based TikTok hashtag tracker
+A GitHub actions-based TikTok hashtag tracker. An action runs on a cronjob to check the number of views for one or more tags specified in the `tags.txt` file. 
 
-[View live here](https://marginalhours.github.io/tiktok-hashtag-tracker/)
+[View an example live here](https://marginalhours.github.io/tiktok-hashtag-tracker/)
 
 ## Usage
 
-Interacting with this can be handled purely by GitHub actions:
+Clone this repository and delete whatever you want from the `data` directory. Then populate `tags.txt`.
 
-- `add-tag.yml`: workflow dispatch, takes tag as name
-- `remove-tag.yml`: workflow dispatch, takes tag as name
-- `update-stats.yml`: cron dispatch every 6 hours
+Entries in the tag file look like: 
+
+```
+<tag name> -- <list of tag categories>
+```
+For example, to track the tag `hello` in categories `#experiment`, you would use:
+
+```
+hello -- #experiment 
+```
+
+GitHub actions should start adding datapoints within an hour or two. 
