@@ -15,13 +15,11 @@ heatoftheeverflame -- #soph-titles
 burnoftheeverflame -- #soph-titles
 kindredscurse -- #soph-titles
 kindredscursesaga -- #soph-titles
+thethingswewater -- #soph-titles
+marianazapata -- #soph-titles
 rebeccazanetti -- #soph-titles
 onecursedrose -- #soph-titles
-gracereilly -- #soph-titles
-firstdown -- #soph-titles
-breakawaygracereilly -- #soph-titles
-stealinghome -- #soph-titles
-wickedserve -- #soph-titles
+onedarkkiss -- #sophe-titles
 erinacraig -- #soph-titles
 alandsowide -- #soph-titles
 thethirteenthchild -- #soph-titles
@@ -66,6 +64,11 @@ sararaasch -- #target-list
 emilymcintire -- #target-list
 crossed -- #target-list
 eternalbookstorm -- #headline-eternal-titles
+gracereilly -- #headline-eternal-titles
+firstdown -- #headline-eternal-titles
+breakawaygracereilly -- #headline-eternal-titles
+stealinghome -- #headline-eternal-titles
+wickedserve -- #headline-eternal-titles
 mazeyeddings -- #headline-eternal-titles
 abrushwithlove -- #headline-eternal-titles
 lizzieblakesbestmistake -- #headline-eternal-titles
@@ -83,7 +86,6 @@ therulebook -- #headline-eternal-titles
 fromlukovwithlove -- #headline-eternal-titles
 whengraciemetthegrump -- #headline-eternal-titles
 thewallofwinnipegandme -- #headline-eternal-titles
-marianazapata -- #headline-eternal-titles
 monicamurphy -- #headline-eternal-titles
 rebeccayarros -- #competitors
 fourthwing -- #competitors
@@ -109,6 +111,9 @@ queenofroses -- #competitors
 lylasage -- #competitors
 doneanddusted -- #competitors
 cowboyromance -- #competitors
+IlianaXander -- #requests
+LoveMom -- #requests
+LoveMombook -- #requests
 JayseaLynn -- #requests
 ForWhomtheBelleTolls -- #requests
 HellsBelles -- #requests
