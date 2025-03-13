@@ -1,4 +1,5 @@
 ambernicole -- #soph-titles
+ambervnicole -- #soph-titles
 godsandmonsters -- #soph-titles
 thebookofazrael -- #soph-titles
 thethroneofbrokengods -- #soph-titles
@@ -109,7 +110,6 @@ hannahbonamyoung -- #competitors
 outonalimb -- #competitors
 balkhabra -- #competitors
 collidebalkhabra -- #competitors
-ljandrews -- #competitors
 cncrawford -- #competitors
 frostandnectar -- #competitors
 acourtthiscruelandlovely -- #competitors
