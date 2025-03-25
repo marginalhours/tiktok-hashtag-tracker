@@ -45,6 +45,8 @@ healerofkingdoms -- #soph-titles
 aprincesocruel -- #soph-titles
 acagesogilded -- #soph-titles
 acourtsodark -- #soph-titles
+elenaarmas -- #target-list
+icarusuniversity -- #target-list
 ljandrews -- #target-list
 theeverking -- #target-list
 theeverqueen -- #target-list
