@@ -47,6 +47,12 @@ acagesogilded -- #soph-titles
 acourtsodark -- #soph-titles
 elenaarmas -- #target-list
 icarusuniversity -- #target-list
+briarboleyn -- #target-list
+onwingsofblood -- #target-list
+bloodwingacademy -- #target-list
+thebondthatburns -- #target-list
+thewingsthatbind -- #target-list
+queenofroses -- #target-list
 ljandrews -- #target-list
 theeverking -- #target-list
 theeverqueen -- #target-list
@@ -116,8 +122,6 @@ cncrawford -- #competitors
 frostandnectar -- #competitors
 acourtthiscruelandlovely -- #competitors
 staciastark -- #competitors
-briarboleyn -- #competitors
-queenofroses -- #competitors
 lylasage -- #competitors
 doneanddusted -- #competitors
 cowboyromance -- #competitors
