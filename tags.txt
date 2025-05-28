@@ -48,6 +48,9 @@ healerofkingdoms -- #soph-titles
 aprincesocruel -- #soph-titles
 acagesogilded -- #soph-titles
 acourtsodark -- #soph-titles
+courtofwinter -- #target-list
+faeofsnowandice -- #target-list
+kristastreet -- #target-list
 WendyHeiss -- #target-list
 TheAuranChronicles -- #target-list
 AuranChronicles -- #target-list
