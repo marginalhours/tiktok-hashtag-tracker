@@ -23,6 +23,12 @@ readyornot -- #soph-titles
 carabastone -- #soph-titles
 thethingswewater -- #soph-titles
 marianazapata -- #soph-titles
+kulti -- #soph-titles
+lunaandthelie -- #soph-titles
+underlocke -- #soph-titles
+fromlukovwithlove -- #headline-eternal-titles
+whengraciemetthegrump -- #headline-eternal-titles
+thewallofwinnipegandme -- #headline-eternal-titles
 rebeccazanetti -- #soph-titles
 onecursedrose -- #soph-titles
 onedarkkiss -- #soph-titles
@@ -105,9 +111,6 @@ thecheatsheet -- #headline-eternal-titles
 wheninrome -- #headline-eternal-titles
 practicemakesperfect -- #headline-eternal-titles
 therulebook -- #headline-eternal-titles
-fromlukovwithlove -- #headline-eternal-titles
-whengraciemetthegrump -- #headline-eternal-titles
-thewallofwinnipegandme -- #headline-eternal-titles
 monicamurphy -- #headline-eternal-titles
 elenaarmas -- #competitors
 icarusuniversity -- #competitors
