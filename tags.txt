@@ -57,6 +57,7 @@ acourtsodark -- #soph-titles
 sophiastgermain -- #target-list
 compellingfates -- #target-list
 atonguesosweetanddeadly -- #target-list
+tonguesosweetanddeadly -- #target-list
 apromisesoboldandbroken -- #target-list
 abondsofierceandfragile -- #target-list
 afatesodarkanddelicate -- #target-list
