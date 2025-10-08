@@ -54,6 +54,11 @@ healerofkingdoms -- #soph-titles
 aprincesocruel -- #soph-titles
 acagesogilded -- #soph-titles
 acourtsodark -- #soph-titles
+ellemae -- #target-list
+contractbound -- #target-list
+lostcause -- #target-list
+lostcausebloodbound -- #target-list
+bloodbound -- #target-list
 sophiastgermain -- #target-list
 compellingfates -- #target-list
 atonguesosweetanddeadly -- #target-list
