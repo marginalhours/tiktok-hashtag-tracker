@@ -18,6 +18,8 @@ heatoftheeverflame -- #soph-titles
 burnoftheeverflame -- #soph-titles
 kindredscurse -- #soph-titles
 kindredscursesaga -- #soph-titles
+deathsdaughter -- #soph-titles
+sabarnes -- #soph-titles
 promisemesunshine -- #soph-titles
 readyornot -- #soph-titles
 carabastone -- #soph-titles
@@ -26,9 +28,9 @@ marianazapata -- #soph-titles
 kulti -- #soph-titles
 lunaandthelie -- #soph-titles
 underlocke -- #soph-titles
-fromlukovwithlove -- #headline-eternal-titles
-whengraciemetthegrump -- #headline-eternal-titles
-thewallofwinnipegandme -- #headline-eternal-titles
+fromlukovwithlove -- #soph-titles
+whengraciemetthegrump -- #soph-titles
+thewallofwinnipegandme -- #soph-titles
 rebeccazanetti -- #soph-titles
 onecursedrose -- #soph-titles
 onedarkkiss -- #soph-titles
@@ -183,6 +185,8 @@ staciastark -- #competitors
 lylasage -- #competitors
 doneanddusted -- #competitors
 cowboyromance -- #competitors
+firepower -- #requests
+mirbenitz -- #requests
 kissedbythegods -- #requests
 unwrittenbythegods -- #requests
 catyrogan -- #requests
