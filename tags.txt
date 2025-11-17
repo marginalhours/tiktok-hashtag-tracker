@@ -185,6 +185,8 @@ staciastark -- #competitors
 lylasage -- #competitors
 doneanddusted -- #competitors
 cowboyromance -- #competitors
+intercepts -- #requests
+tjpayne -- #requests
 firepower -- #requests
 mirbenitz -- #requests
 kissedbythegods -- #requests
