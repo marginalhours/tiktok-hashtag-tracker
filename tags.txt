@@ -1,3 +1,10 @@
+sophiastgermain -- #soph-titles
+compellingfates -- #soph-titles
+atonguesosweetanddeadly -- #soph-titles
+tonguesosweetanddeadly -- #soph-titles
+apromisesoboldandbroken -- #soph-titles
+abondsofierceandfragile -- #soph-titles
+afatesodarkanddelicate -- #soph-titles
 ambernicole -- #soph-titles
 ambervnicole -- #soph-titles
 godsandmonsters -- #soph-titles
@@ -61,13 +68,6 @@ contractbound -- #target-list
 lostcause -- #target-list
 lostcausebloodbound -- #target-list
 bloodbound -- #target-list
-sophiastgermain -- #target-list
-compellingfates -- #target-list
-atonguesosweetanddeadly -- #target-list
-tonguesosweetanddeadly -- #target-list
-apromisesoboldandbroken -- #target-list
-abondsofierceandfragile -- #target-list
-afatesodarkanddelicate -- #target-list
 kckean -- #target-list
 heiracademy -- #target-list
 thekingdomofruin -- #target-list
@@ -185,6 +185,7 @@ staciastark -- #competitors
 lylasage -- #competitors
 doneanddusted -- #competitors
 cowboyromance -- #competitors
+thedogstars -- #requests
 intercepts -- #requests
 tjpayne -- #requests
 interceptstjpayne -- #requests
