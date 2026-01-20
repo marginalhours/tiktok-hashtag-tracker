@@ -63,6 +63,11 @@ healerofkingdoms -- #soph-titles
 aprincesocruel -- #soph-titles
 acagesogilded -- #soph-titles
 acourtsodark -- #soph-titles
+arequiemforfallenstars -- #target-list
+requiemforfallenstars -- #target-list
+hazelwilkes -- #target-list
+hazelswilkes -- #target-list
+cadenceofthefallen -- #target-list
 ellemae -- #target-list
 contractbound -- #target-list
 lostcause -- #target-list
