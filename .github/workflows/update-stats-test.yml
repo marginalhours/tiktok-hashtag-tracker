@@ -1,0 +1,30 @@
+name: Update stats (Docker test)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  update-stats:
+    name: Update stats
+    runs-on: ubuntu-latest
+    container:
+      image: mcr.microsoft.com/playwright/python:v1.40.0-jammy
+    environment: stats
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Scrape new data values
+        run: ./scrape.py
+        timeout-minutes: 15
+
+      - uses: EndBug/add-and-commit@v9
+        with:
+          add: "."
+          author_name: "GitHub Actions"
+          message: "Scrape and update stats"
+          push: true
