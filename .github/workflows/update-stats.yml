@@ -54,8 +54,6 @@ jobs:
       - name: Scrape new data values
         run: ./scrape.py
         timeout-minutes: 15
-        env:
-          DEBUG: pw:api
 
       - uses: EndBug/add-and-commit@v9 # You can change this to use a specific version.
         with:
