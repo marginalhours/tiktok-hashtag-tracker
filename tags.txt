@@ -51,6 +51,8 @@ juliafine -- #soph-titles
 maddalenaandthedark -- #soph-titles
 dianemariebrown -- #soph-titles
 blackcandlewomen -- #soph-titles
+theunwrittenheir -- #target-list
+cosetteverga -- #target-list
 ruthharrow -- #target-list
 dearteacher -- #target-list
 haleyjmunroe -- #target-list
@@ -125,12 +127,6 @@ stephanieperkins -- #competitors
 jasminemas -- #competitors
 bloodofhercules -- #competitors
 thedeadromantics -- #competitors
-thedogstars -- #requests
-intercepts -- #requests
-tjpayne -- #requests
-interceptstjpayne -- #requests
-firepower -- #requests
-mirbenitz -- #requests
 kissedbythegods -- #competitors
 unwrittenbythegods -- #competitors
 catyrogan -- #competitors
@@ -156,3 +152,9 @@ kateweston -- #requests
 murderonaschoolnight -- #requests
 finlaydonovan -- #requests
 ellecosimano -- #requests
+thedogstars -- #requests
+intercepts -- #requests
+tjpayne -- #requests
+interceptstjpayne -- #requests
+firepower -- #requests
+mirbenitz -- #requests
