@@ -34,7 +34,7 @@ jobs:
 
       - name: Get installed Playwright version
         id: playwright-version
-        run: echo "PLAYWRIGHT_VERSION=1.40.0" >> $GITHUB_ENV
+        run: echo "PLAYWRIGHT_VERSION=1.58.0" >> $GITHUB_ENV
 
       - name: Cache playwright binaries
         uses: actions/cache@v3
